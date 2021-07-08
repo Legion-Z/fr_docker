@@ -33,12 +33,12 @@ API работает с локальной БД SQLite через встроен
 
 
 
-### Примеры использования
+### Примеры использования  (X.X.X.X - ip сервера)
 
 - **Добавление нового интервью**
 
 Тип запроса	PUT<br>
-*Запрос*	&nbsp;&nbsp; 	http://127.0.0.1:8000/admin-api/interview/<br>
+*Запрос*	&nbsp;&nbsp; 	http://X.X.X.X:8000/admin-api/interview/<br>
 *Заголовки*<br>
 Authorization: &nbsp;&nbsp;   Token 9eb668d3741d4abfcddcf4fd665428027539c4ae<br>
 Content-Type: &nbsp;&nbsp;    application/json<br>
@@ -55,7 +55,7 @@ Content-Type: &nbsp;&nbsp;    application/json<br>
 -  **Изменение интервью**
 
 Тип запроса	*PATCH*<br>
-*Запрос*&nbsp;&nbsp; http://127.0.0.1:8000/admin-api/interviews/1/<br>
+*Запрос*&nbsp;&nbsp; http://X.X.X.X:8000/admin-api/interviews/1/<br>
 *Заголовки*<br>
 - Authorization: &nbsp;&nbsp;  Token 9eb668d3741d4abfcddcf4fd665428027539c4ae<br>
 - Content-Type:  &nbsp;&nbsp;  application/json<br>
@@ -70,7 +70,7 @@ Content-Type: &nbsp;&nbsp;    application/json<br>
 - Добавление нового вопроса в интервью (нужны id интервью. Типы вопроса: «T» -текстовый, «S» - один из вариантов, «M» - несколько из вариантов)
 
 Тип запроса	PUT<br>
-*Запрос*&nbsp;&nbsp; http://127.0.0.1:8000/admin-api/question/<br>
+*Запрос*&nbsp;&nbsp; http://X.X.X.X:8000/admin-api/question/<br>
 *Заголовки*<br>
 - Authorization: &nbsp;&nbsp;  Token 9eb668d3741d4abfcddcf4fd665428027539c4ae<br>
 - Content-Type:  &nbsp;&nbsp;  application/json<br>
@@ -91,7 +91,7 @@ Content-Type: &nbsp;&nbsp;    application/json<br>
 - Добавление ответа на вопрос (нужен id-вопроса. При отсутствии id пользователя или неверный id, ответ добавляется от анонимного пользователя)
 
 Тип запроса	PUT<br>
-*Запрос*&nbsp;&nbsp; http://127.0.0.1:8000/add-ans/<br>
+*Запрос*&nbsp;&nbsp; http://X.X.X.X:8000/add-ans/<br>
 *Заголовки* <br>
 - Content-Type: &nbsp;&nbsp;   application/json<br>
 
@@ -105,4 +105,4 @@ Content-Type: &nbsp;&nbsp;    application/json<br>
 - Получение всех ответов респондента по id<br>
 
 Тип запроса	GET<br>
-*Запрос* &nbsp;&nbsp;http://127.0.0.1:8000/user-answers/1/<br>
+*Запрос* &nbsp;&nbsp;http://X.X.X.X:8000/user-answers/1/<br>
